@@ -1,52 +1,74 @@
-body {
-	background-image: url(img/bgr.jpg);
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	
+}
+body {   
+	background: url(img/bgr.jpg);
+	background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	background-size: cover;
+}
+.container {
+	margin: auto;
+	width: 1200px;
+}
+.header {
+	height: 40px;
+}
+a.dwnld {
+	color: #fafafa;
+	font-family: 'Raleway';
+	font-size: 28px;
+	border: 1px solid #fafafa;
+	border-radius: 20px;
+	margin-top: 90px;
+	padding: 10px;
+}
+li {
+	margin-top: 110px;
 }
 
-#l1 {
-	position: absolute;
-	right: 325px;
-	top: 200px;
-	transform: scale(0.5, 0.5)
+.dd {
+	display: flex;
+	height: 600px;
 }
-
+ul {
+	width: 445px;
+}
 #dd {
-	padding-top: 75px;
-	padding-left: 100px;
+	height: 500px;
+	opacity: .8;
+	transition: all.5s;
+	
 }
+#dd:hover {
+	height: 600px;
+	opacity: 1;
+	transition: all.5s;
+}
+#enter {
+	display: flex;
+	height: 90px;
+	justify-content: center;
+	align-items: center;
 
-#arrow {
-	position: absolute;
-	right: 470px;
-	top: 380px;
-	transform: rotate(-90deg) scale(0.8, 0.8);
-	-webkit-animation: pulsing 2s infinite;
-  animation: pulsing 2s infinite;
 }
-@-webkit-keyframes pulsing {
-	0% {
-	  -webkit-transform: scale(0.8, 0.8);
-	  transform: scale(0.8, 0.8)
-	}
-	50% {
-	  -webkit-transform: scale(1.0, 1.0);
-	  transform: scale(1.0, 1.0);
-	}
-	100% {
-	  -webkit-transform: scale(0.8, 0.8);
-	  transform: scale(0.8, 0.8);
-	}
-  }
-  @keyframes pulsing {
-	0% {
-	  -webkit-transform: scale(0.8, 0.8);
-	  transform: scale(0.8, 0.8)
-	}
-	50% {
-	  -webkit-transform: scale(1.0, 1.0);
-	  transform: scale(1.0, 1.0);
-	}
-	100% {
-	  -webkit-transform: scale(0.8, 0.8);
-	  transform: scale(0.8, 0.8);
-	}
-  }
+#enter a {
+	border-bottom: 7px solid rgb(88, 106, 168);
+	border-radius: 10px;
+	background: #7289DA;
+	color: #fafafa;
+	font-family: 'Rubik';
+	letter-spacing: 1px;
+	padding: 7px;
+	font-size: 22px;
+	transition: all.2s;
+}
+#enter a:hover {
+	border-bottom: 5px solid rgb(88, 106, 168);
+	margin-top: 2px;
+	transition: all.2s ;
+}
